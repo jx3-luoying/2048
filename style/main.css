@@ -175,7 +175,7 @@ hr {
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
     .game-container .game-message p {
-      font-size: 40px;
+      font-size: 25px;
       font-weight: bold;
       height: 40px;
       line-height: 40px;
@@ -382,7 +382,6 @@ hr {
   .tile.tile-256 .tile-inner {
     color: #f9f6f2;
     background: #edcc61;
-    font-size:24px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048); }
   .tile.tile-512 .tile-inner {
     color: #f9f6f2;
@@ -398,7 +397,7 @@ hr {
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
   .tile.tile-4096 .tile-inner {
     background: #ffe697;
-    font-size: 25px;
+    font-size: 22px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
   .tile.tile-8192 .tile-inner {
     background: #ffeaa8;
@@ -609,7 +608,7 @@ hr {
       -moz-animation-fill-mode: both;
       animation-fill-mode: both; }
       .game-container .game-message p {
-        font-size: 60px;
+        font-size: 25px;
         font-weight: bold;
         height: 60px;
         line-height: 60px;
