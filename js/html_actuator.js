@@ -151,9 +151,9 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(14);
-  mytxt[0]="-我要做只攻罒ω罒！汪~<br>-底层受你好！";
-  mytxt[1]="-春泥一朵护菊花 万花谷配方山泽的选择╮(╯_╰)╭<br>-就知道你的选择是菊花";
-  mytxt[2]="-我抽死你!╰(｀□′)╯（ ┴┴ <br>-隔壁道长又和基友打情骂俏";
+  mytxt[0]="我要做只攻罒ω罒！汪~";
+  mytxt[1]="春泥一朵护菊花 万花谷配方山泽的选择╮(╯_╰)╭";
+  mytxt[2]="我抽死你!╰(｀□′)╯（ ┴┴ ";
   mytxt[3]="我可是在马嵬驿有粉丝的女神！ \(╯-╰)/ ";
   mytxt[4]="追我的女生再多,人家也只爱基友的捡肥皂！@^_^@";
   mytxt[5]="我是正♂直♂的大师!>.<";
