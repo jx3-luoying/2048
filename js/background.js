@@ -1,4 +1,5 @@
-var num =  Math.floor(Math.random()*9);
+document.body.style.background ="url('style/1.png') #88211C no-repeat left bottom";
+/*var num =  Math.floor(Math.random()*9);
 switch(num){
     case 0:
         if (document.body) {
@@ -45,6 +46,6 @@ switch(num){
             document.body.style.background ="url('style/9.png') #235067 no-repeat right bottom";
         }
         break;  
-}
+}*/
     
 
