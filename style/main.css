@@ -3,7 +3,9 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #faf8ef;
-  background-image: "http://thebus.net/sites/default/files/ws_Good_Morning_Sun_1280x1024.jpg"
+  background-image: "http://thebus.net/sites/default/files/ws_Good_Morning_Sun_1280x1024.jpg";
+  background-repeat: no-repeat;
+  background-position: center;
   color: #776e65;
   font-family: "Clear Sans", "Helvetica Neue", "Microsoft Yahei", Arial, sans-serif;
   font-size: 18px; }
