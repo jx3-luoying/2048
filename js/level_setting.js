@@ -1,4 +1,4 @@
-var text=new Array(18);
+/*var text=new Array(18);
   text[0] = " ";
   text[1] = "依萍";
   text[2] = "二勾";
@@ -17,7 +17,7 @@ var text=new Array(18);
   text[15] = "白白";
   text[16] = "提子";
   text[17] = "山山";
-  
+*/  
 $(function() {
   var name = $( "#name" ),
       level=$("#levelnum"),
@@ -69,8 +69,8 @@ $(function() {
         var newList = "<p>";
         if ( bValid ) {
           $( ".input" ).each(function() {
-            text[i+1]=$( this ).val();
-            newList = newList + text[i+1] + " ";
+            //text[i+1]=$( this ).val();
+            //newList = newList + text[i+1] + " ";
           });
           $( "#users" ).append( newList + "</p>" );
           $( this ).dialog( "close" );
