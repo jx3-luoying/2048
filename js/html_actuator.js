@@ -87,7 +87,6 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   inner.classList.add("tile-inner");
   inner.innerHTML = text[text2(tile.value)];
-  $( "#users" ).append( "<p>" + text[text2(tile.value)] + "</p>" );
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
