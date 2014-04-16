@@ -1,4 +1,4 @@
-world.text=new Array(18);
+/*world.text=new Array(18);
 world.text[0] = " ";
 world.text[1] = "依萍";
 world.text[2] = "二勾";
@@ -16,7 +16,7 @@ world.text[13] = "折颜";
 world.text[14] = "波波";
 world.text[15] = "白白";
 world.text[16] = "提子";
-world.text[17] = "山山";
+world.text[17] = "山山";*/
   
 $(function() {
   var name = $( "#name" ),
@@ -70,7 +70,7 @@ $(function() {
         if ( bValid ) {
           $( ".input" ).each(function(i) {
             //world.text[i+1]=$( this ).val();
-            newList = newList + world.text[i+1] + " ";
+            newList = newList + $( this ).val() + " ";
           });
           $( "#users" ).append( newList + "</p>" );
           $( this ).dialog( "close" );
