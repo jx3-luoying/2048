@@ -17,7 +17,7 @@ world.text=[" ",
             "提子",
             "山山"];
   
-$(function() {
+  /*$(function() {
   var name = $( "#name" ),
       level=$("#levelnum"),
       allFields = $( [] );
@@ -87,7 +87,7 @@ $(function() {
     }
   });
   
-  /*$(document).ready(function(){
+$(document).ready(function(){
     $( "#submit" ).click(function() {
       for (var i=1;i<level.val();i++){ 
         var oClone = document.getElementById("template").cloneNode(true);
