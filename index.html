@@ -18,7 +18,23 @@
   <meta property="og:site_name" content="2048 game"/>
 </head>
 <body>
+  <div id="dialog-form" title="# of difficulty level">
+    <p class="validateTips">All form fields are required.</p>
+    <form>
+      <fieldset id="inputList">
+         <div id="template">
+           <label for="name">Name</label> <input type="text" name="name" id="name" class="input"><!--class="text ui-widget-content ui-corner-all"-->
+         </div>
+      </fieldset>
+    </form>
+  </div>
 
+  <div id="users" class="ui-widget"></div>
+
+  <div>
+    # of level: <input type="number" name="levelnum" id="levelnum"> <input type="submit" id="submit">
+  </div>
+  
   <div class="container">
   <p class="game-explanation">
   做来娱乐帮会的小伙伴们，代码大多是从https://github.com/gabrielecirulli/2048和https://github.com/oprilzeng/oprilzeng.github.io
@@ -85,6 +101,7 @@
     </div>
  </div>
   <script src="js/background.js"></script>
+  <script src="js/levelSetting.js"></script>
   <script src="js/animframe_polyfill.js"></script>
   <script src="js/keyboard_input_manager.js"></script>
   <script src="js/html_actuator.js"></script>
