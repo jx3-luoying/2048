@@ -102,7 +102,7 @@ $(function() {
   
   $(document).ready(function(){
     $("#setting").click(function(){
-      $("#levelSetting").slideDown("slow");
+      $("#levelSetting").slideToggle("slow");
     });
   });
 });
