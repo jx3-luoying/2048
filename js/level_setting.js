@@ -1,22 +1,21 @@
-var text=new Array(18);
-  text[0] = " ";
-  text[1] = "依萍";
-  text[2] = "二勾";
-  text[3] = "光叽叽";
-  text[4] = "天坑";
-  text[5] = "二夫人";
-  text[6] = "女神豆";
-  text[7] = "贱贱";
-  text[8] = "田鸡";
-  text[9] = "发发";
-  text[10] = "阿槑";
-  text[11] = "神凉";
-  text[12] = "令小狐";
-  text[13] = "折颜";
-  text[14] = "波波";
-  text[15] = "白白";
-  text[16] = "提子";
-  text[17] = "山山";
+world.text=[" ", 
+            "依萍",
+            "二勾", 
+            "光叽叽", 
+            "天坑",  
+            "二夫人", 
+            "女神豆", 
+            "贱贱",  
+            "田鸡", 
+            "发发",
+            "阿槑",
+            "神凉",
+            "令小狐",
+            "折颜",
+            "波波",
+            "白白",
+            "提子",
+            "山山"];
   
 $(function() {
   var name = $( "#name" ),
@@ -69,7 +68,7 @@ $(function() {
         //var newList = "<p>";
         if ( bValid ) {
           $( ".input" ).each(function(i) {
-            text[i+1]=$( this ).val();
+            world.text[i+1]=$( this ).val();
             //newList = newList + $( this ).val(); + " ";
           });
           //$( "#users" ).append( newList + "</p>" );
