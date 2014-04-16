@@ -56,6 +56,8 @@ $(function() {
     height: 'auto',
     width: 'auto',
     modal: true,
+    show : "blind", 
+    hide : "blind",
     buttons: {
       "Create an account": function() {
         var bValid = true;
