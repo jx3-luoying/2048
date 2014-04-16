@@ -52,7 +52,7 @@ HTMLActuator.prototype.clearContainer = function (container) {
 };
 
 HTMLActuator.prototype.addTile = function (tile) {
-  var text = world.text;
+  //var text = world.text;
   var text=new Array(18);
   text[0] = " ";
   text[1] = "依萍";
