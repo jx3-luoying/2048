@@ -1,4 +1,4 @@
-world.text=[" ", 
+/*world.text=[" ", 
             "依萍",
             "二勾", 
             "光叽叽", 
@@ -15,9 +15,9 @@ world.text=[" ",
             "波波",
             "白白",
             "提子",
-            "山山"];
+            "山山"];*/
   
-  /*$(function() {
+  $(function() {
   var name = $( "#name" ),
       level=$("#levelnum"),
       allFields = $( [] );
@@ -68,7 +68,7 @@ world.text=[" ",
         //var newList = "<p>";
         if ( bValid ) {
           $( ".input" ).each(function(i) {
-            world.text[i+1]=$( this ).val();
+            //world.text[i+1]=$( this ).val();
             //newList = newList + $( this ).val(); + " ";
           });
           //$( "#users" ).append( newList + "</p>" );
@@ -97,11 +97,11 @@ $(document).ready(function(){
       }
       $( "#dialog-form" ).dialog( "open" );
     });
-  });*/
+  });
   
   $(document).ready(function(){
     $("#setting").click(function(){
       $("#levelSetting").slideToggle("slow");
     });
   });
-//});
+});
