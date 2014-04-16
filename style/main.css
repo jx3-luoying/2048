@@ -33,7 +33,8 @@ output {
   display: inline-block; 
   font: .9em Georgia;
   top: 85%;
-  left: 105%;
+  margin-left: -1.8%;
+  left: 138px;
 }
 
 output:before { 
