@@ -53,7 +53,7 @@ HTMLActuator.prototype.clearContainer = function (container) {
 
 HTMLActuator.prototype.addTile = function (tile) {
   var text = world.text;
-  /*var text=new Array(18);
+  var text=new Array(18);
   text[0] = " ";
   text[1] = "依萍";
   text[2] = "二勾";
@@ -71,7 +71,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[14] = "阿槑";
   text[15] = "白白";
   text[16] = "提子";
-  text[17] = "山山";*/
+  text[17] = "山山";
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
   var wrapper   = document.createElement("div");
@@ -149,58 +149,4 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
   this.bestContainer.textContent = bestScore;
 };
 
-HTMLActuator.prototype.message = function (won) {
-  var mytxt=new Array(14);
-  mytxt[0]="我要做只攻罒ω罒！汪~";
-  mytxt[1]="春泥一朵护菊花 万花谷配方山泽的选择╮(╯_╰)╭";
-  mytxt[2]="我抽死你!╰(｀□′)╯（ ┴┴ ";
-  mytxt[3]="我可是在马嵬驿有粉丝的女神！ \(╯-╰)/ ";
-  mytxt[4]="追我的女生再多,人家也只爱基友的捡肥皂！@^_^@";
-  mytxt[5]="我是正♂直♂的大师!>.<";
-  mytxt[6]="啊!双开和尚棍子! ε(┬┬＿┬┬)3";
-  mytxt[7]="我可是披着萝莉皮的御姐!∩__∩y";
-  mytxt[8]="最近亮晶晶太多,土豪的烦恼谁能懂!";
-  mytxt[9]="嗷呜!我再回去睡一会!\(～__～)/";
-  mytxt[10]="作为一只攻我肿么能迷路!//(ㄒoㄒ)// ";
-  mytxt[11]="人家不呆啊喂!不要悬赏人家啊喂!黄鸡别跑啊喂! <( ｀□′)";
-  mytxt[12]="每天都被自己帅醒(*ˉ﹃ˉ) ";
-  mytxt[13]="火车~快去练只秀太来！然后扛着我的五毒向总攻进发！\(≥▽≤)/";
-
-
-  var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
-  var type    = won ? "game-won" : "game-over";
-  var message = won ? "快去好好念书,小鬼们,总攻的位置也是你们能坐的！" : mytxt[text3(maxscore)-3];
-
-  if (typeof ga !== "undefined") {
-    ga("send", "event", "game", "end", type, this.score);
-  }
-
-  this.messageContainer.classList.add(type);
-  this.messageContainer.getElementsByTagName("p")[0].textContent = message;
-
-  this.clearContainer(this.sharingContainer);
-  this.sharingContainer.appendChild(this.scoreTweetButton());
-  twttr.widgets.load();
-};
-
-HTMLActuator.prototype.clearMessage = function () {
-  // IE only takes one value to remove at a time.
-  this.messageContainer.classList.remove("game-won");
-  this.messageContainer.classList.remove("game-over");
-};
-
-HTMLActuator.prototype.scoreTweetButton = function () {
-  var tweet = document.createElement("a");
-  tweet.classList.add("twitter-share-button");
-  tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "oprilzeng");
-  tweet.setAttribute("data-url", "http://oprilzeng.github.io/2048/full");
-  tweet.setAttribute("data-counturl", "http://oprilzeng.github.io/2048/full/");
-  tweet.textContent = "Tweet";
-
-  var text = "I scored " + this.score + " points at PRC2048-Full edition, a game where you " +
-             "join numbers to score high! #PRC2048";
-  tweet.setAttribute("data-text", text);
-
-  return tweet;
-};
+HTMLActuator.prototype.
