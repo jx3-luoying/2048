@@ -66,13 +66,13 @@ $(function() {
           bValid = bValid && checkLength( $( this ), "tile name", 0, 5 );
         });
         
-        var newList = "<p>";
+        //var newList = "<p>";
         if ( bValid ) {
           $( ".input" ).each(function(i) {
             text[i+1]=$( this ).val();
-            newList = newList + $( this ).val(); + " ";
+            //newList = newList + $( this ).val(); + " ";
           });
-          $( "#users" ).append( newList + "</p>" );
+          //$( "#users" ).append( newList + "</p>" );
           $( this ).dialog( "close" );
         }
 
