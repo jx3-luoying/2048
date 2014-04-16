@@ -69,7 +69,7 @@ $(function() {
         var newList = "<p>";
         if ( bValid ) {
           $( ".input" ).each(function(i) {
-            world.text[i+1]=$( this ).val();
+            //world.text[i+1]=$( this ).val();
             newList = newList + world.text[i+1] + " ";
           });
           $( "#users" ).append( newList + "</p>" );
