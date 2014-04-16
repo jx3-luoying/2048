@@ -1,16 +1,12 @@
 @import url(fonts/clear-sans.css);
-html { 
-  background: url(1.jpg) no-repeat center center fixed; 
+html, body {
+  margin: 0;
+  padding: 0;
+  background-attachment:fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-body {
-  margin: 0;
-  padding: 0;
-  background-attachment:fixed;
-  background-size:cover;
   color: #f9f6f2;
   font-family: "Clear Sans", "Helvetica Neue", "Microsoft Yahei", Arial, sans-serif;
   font-size: 18px; }
