@@ -88,7 +88,7 @@ $(function() {
   });
   
   $(document).ready(function(){
-    $( "#submit" ).button().click(function() {
+    $( "#submit" ).click(function() {
       for (var i=1;i<level.val();i++){ 
         var oClone = document.getElementById("template").cloneNode(true);
         oClone.setAttribute('id',"appendItem");
