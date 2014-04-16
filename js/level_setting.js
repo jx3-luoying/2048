@@ -1,23 +1,24 @@
-/*world.text=[" ", 
-            "依萍",
-            "二勾", 
-            "光叽叽", 
-            "天坑",  
-            "二夫人", 
-            "女神豆", 
-            "贱贱",  
-            "田鸡", 
-            "发发",
-            "阿槑",
-            "神凉",
-            "令小狐",
-            "折颜",
-            "波波",
-            "白白",
-            "提子",
-            "山山"];*/
-  
-  $(function() {
+/*var text=new Array(18);
+  text[0] = " ";
+  text[1] = "依萍";
+  text[2] = "二勾";
+  text[3] = "光叽叽";
+  text[4] = "天坑";
+  text[5] = "二夫人";
+  text[6] = "女神豆";
+  text[7] = "贱贱";
+  text[8] = "田鸡";
+  text[9] = "发发";
+  text[10] = "阿槑";
+  text[11] = "神凉";
+  text[12] = "令小狐";
+  text[13] = "折颜";
+  text[14] = "波波";
+  text[15] = "白白";
+  text[16] = "提子";
+  text[17] = "山山";
+*/  
+$(function() {
   var name = $( "#name" ),
       level=$("#levelnum"),
       allFields = $( [] );
@@ -65,13 +66,13 @@
           bValid = bValid && checkLength( $( this ), "tile name", 0, 5 );
         });
         
-        //var newList = "<p>";
+        var newList = "<p>";
         if ( bValid ) {
-          $( ".input" ).each(function(i) {
-            //world.text[i+1]=$( this ).val();
-            //newList = newList + $( this ).val(); + " ";
+          $( ".input" ).each(function() {
+            //text[i+1]=$( this ).val();
+            //newList = newList + text[i+1] + " ";
           });
-          //$( "#users" ).append( newList + "</p>" );
+          $( "#users" ).append( newList + "</p>" );
           $( this ).dialog( "close" );
         }
 
@@ -87,8 +88,8 @@
     }
   });
   
-$(document).ready(function(){
-    $( "#submit" ).click(function() {
+  $(document).ready(function(){
+    $( "#submit" ).button().click(function() {
       for (var i=1;i<level.val();i++){ 
         var oClone = document.getElementById("template").cloneNode(true);
         oClone.setAttribute('id',"appendItem");
