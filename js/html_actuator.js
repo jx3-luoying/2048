@@ -52,7 +52,7 @@ HTMLActuator.prototype.clearContainer = function (container) {
 };
 
 HTMLActuator.prototype.addTile = function (tile) {
-  var text=new Array(18);
+  /*var text=new Array(18);
   text[0] = " ";
   text[1] = "依萍";
   text[2] = "二勾";
@@ -70,7 +70,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[14] = "阿槑";
   text[15] = "白白";
   text[16] = "提子";
-  text[17] = "山山";
+  text[17] = "山山";*/
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
