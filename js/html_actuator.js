@@ -73,7 +73,6 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[17] = "山山";*/
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
-  $( "#users" ).append( "<p>" + text2 + "</p>" );
   var wrapper   = document.createElement("div");
   var inner     = document.createElement("div");
   var position  = tile.previousPosition || { x: tile.x, y: tile.y };
@@ -88,6 +87,7 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   inner.classList.add("tile-inner");
   inner.innerHTML = text[text2(tile.value)];
+  $( "#users" ).append( "<p>" + text[text2(tile.value)] + "</p>" );
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
