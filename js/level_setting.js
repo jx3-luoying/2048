@@ -1,4 +1,4 @@
-/*var text=new Array(18);
+var text=new Array(18);
   text[0] = " ";
   text[1] = "依萍";
   text[2] = "二勾";
@@ -17,7 +17,7 @@
   text[15] = "白白";
   text[16] = "提子";
   text[17] = "山山";
-*/  
+  
 $(function() {
   var name = $( "#name" ),
       level=$("#levelnum"),
