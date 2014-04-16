@@ -35,21 +35,27 @@
   </style>
 </head>
 <body>
-  <div id="dialog-form" title="# of difficulty level">
-    <p class="validateTips">All form fields are required.</p>
-    <form>
-      <fieldset id="inputList">
-         <div id="template">
-           <label for="name">Name</label> <input type="text" name="name" id="name" class="input"><!--class="text ui-widget-content ui-corner-all"-->
-         </div>
-      </fieldset>
-    </form>
-  </div>
-
-  <div id="users" class="ui-widget"></div>
-
-  <div id="levelSetting">
-    # of level: <input type="number" name="levelnum" id="levelnum"> <input type="submit" id="submit">
+  <div id="settingPanel">
+    <div id="dialog-form" title="# of difficulty level">
+      <p class="validateTips">All form fields are required.</p>
+      <form>
+        <fieldset id="inputList">
+           <div id="template">
+             <label for="name">Name</label> <input type="text" name="name" id="name" class="input"><!--class="text ui-widget-content ui-corner-all"-->
+           </div>
+        </fieldset>
+      </form>
+    </div>
+  
+    <div id="users" class="ui-widget"></div>
+  
+    <div id="setting"> 
+      <p>Settings</p>
+    </div>
+    
+    <div id="levelSetting">
+      # of level: <input type="number" name="levelnum" id="levelnum"> <input type="submit" id="submit">
+    </div>
   </div>
   
   <div class="container">
