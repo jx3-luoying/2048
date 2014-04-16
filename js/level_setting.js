@@ -1,4 +1,4 @@
-window.text=[" ",
+var text=[" ",
              "依萍",
              "二勾",
              "光叽叽",
@@ -68,7 +68,7 @@ $(function() {
         var newList = "<p>";
         if ( bValid ) {
           $( ".input" ).each(function(i) {
-            window.text[i+1]=$( this ).val();
+            text[i+1]=$( this ).val();
             //newList = newList + $( this ).val() + " ";
           });
           $( "#users" ).append( newList + "</p>" );
