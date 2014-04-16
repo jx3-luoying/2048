@@ -73,7 +73,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[17] = "山山";*/
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
-
+  $( "#users" ).append( "<p>" + text2 + "</p>" );
   var wrapper   = document.createElement("div");
   var inner     = document.createElement("div");
   var position  = tile.previousPosition || { x: tile.x, y: tile.y };
