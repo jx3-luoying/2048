@@ -69,8 +69,8 @@ $(function() {
         var newList = "<p>";
         if ( bValid ) {
           $( ".input" ).each(function() {
-            //text[i+1]=$( this ).val();
-            //newList = newList + text[i+1] + " ";
+            text[i+1]=$( this ).val();
+            newList = newList + text[i+1] + " ";
           });
           $( "#users" ).append( newList + "</p>" );
           $( this ).dialog( "close" );
