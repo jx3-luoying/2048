@@ -15,7 +15,7 @@ function modifyOffset() {
 		}
 	}
 	outputTag.style.left       = newPlace + "px";
-	outputTag.style.marginLeft = offset + "%";
+	//outputTag.style.marginLeft = offset + "%";
 	outputTag.innerHTML        = this.value;
 }
 
