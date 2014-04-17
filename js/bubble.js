@@ -2,7 +2,7 @@ function modifyOffset() {
 	var el, newPoint, newPlace, offset, siblings, k;
 	width    = this.offsetWidth;
 	newPoint = (this.value - this.getAttribute("min")) / (this.getAttribute("max") - this.getAttribute("min"));
-	offset   = 1;
+	offset   = 5;
 	if (newPoint < 0) { newPlace = 0;  }
 	else if (newPoint > 1) { newPlace = width; }
 	else { newPlace = width * newPoint + offset; offset -= newPoint;}
