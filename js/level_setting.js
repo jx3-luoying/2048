@@ -59,7 +59,7 @@ $(function() {
     show : "blind", 
     hide : "blind",
     buttons: {
-      "Create an account": function() {
+      "确定": function() {
         var bValid = true;
         allFields.removeClass( "ui-state-error" );
         $( ".text" ).each(function() {
@@ -75,7 +75,7 @@ $(function() {
         }
 
       },
-      Cancel: function() {
+      "取消": function() {
         $( this ).dialog( "close" );
       }
     },
