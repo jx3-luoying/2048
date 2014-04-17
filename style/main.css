@@ -22,7 +22,7 @@ h1.title {
   display: block;
   float: left; }
   
-output { 
+/*output { 
   position: absolute;
   background-image: linear-gradient(#444444, #999999);
   width: 30px; 
@@ -51,7 +51,7 @@ output:before {
   position: relative;
   margin: 5px; 
   width: 1000px;
-}
+}*/
 
 @-webkit-keyframes move-up {
   0% {
