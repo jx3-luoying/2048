@@ -63,7 +63,7 @@ $(function() {
         var bValid = true;
         allFields.removeClass( "ui-state-error" );
         $( ".input" ).each(function() {
-          bValid = bValid && checkLength( $( this ), "tile name", 0, 5 );
+          bValid = bValid && checkLength( $( this ), "tile name", 1, 5 );
         });
         
         if ( bValid ) {
