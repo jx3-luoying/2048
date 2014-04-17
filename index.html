@@ -26,7 +26,7 @@
     label{ display:inline-block; font-size: .8em; }
     input.text { margin-bottom: 20px; padding: .5em; font-size: .8em; height: 1em;}
     fieldset { padding:0; border:0; margin-top:25px; }
-    div#levelSetting{ display:none;font-size: .6em; }
+    div#levelSetting{ display:none;font-size: .6em;  position: relative; margin: 5px; width: 100px; }
     div#setting {font-size:.5em;}
     .ui-dialog .ui-state-error { padding: .5em; }
     .validateTips { border: 1px solid transparent; padding: 0.3em; font-size: 0.5em;}
@@ -34,28 +34,23 @@
 </head>
 <body>
   <div id="settingPanel">
-    <div id="dialog-form" title="# of difficulty level">
+    <div id="dialog-form" title="设置方块名">
       <p class="validateTips">All form fields are required.</p>
       <form>
         <fieldset id="inputList">
            <div id="template">
-             <label for="name">Name</label> <input type="text" name="name" id="name" class="text"><!--class="text ui-widget-content ui-corner-all"-->
+             <label for="方块名">Name</label> <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">
            </div>
         </fieldset>
       </form>
     </div>
   
-    <div id="users" class="ui-widget"></div>
-  
     <div id="setting"> Settings </div>
-    
-    <div id="levelSetting">
-      <div id="rangeForm">
-        难度等级: <input type="range" name="levelnum" id="levelnum" min="3" max="17" value="3">
+      <div id="levelSetting">
+        难度等级: 3<input type="range" name="levelnum" id="levelnum" min="3" max="17" value="3">17
         <output for="levelnum" onforminput="value = levelnum.valueAsNumber;"></output>
         <input type="submit" id="submit" value="确定">
       </div>
-    </div>
   </div>
   
   <div class="container">
