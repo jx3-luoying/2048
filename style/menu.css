@@ -240,7 +240,7 @@ body .ui-tooltip { border-width: 2px; }
 /* Component containers
 ----------------------------------*/
 .ui-widget { font-family: Segoe UI,Arial,sans-serif; font-size: 1.1em; }
-.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget .ui-widget { font-size: 0.8em; }
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Segoe UI,Arial,sans-serif; font-size: 1em; }
 .ui-widget-content {color: #ffffff; }
 .ui-widget-content a { color: #ffffff; }
