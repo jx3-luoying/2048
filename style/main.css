@@ -47,6 +47,12 @@ output:before {
   left: 51%;
 }
 
+#rangeForm { 
+  position: relative;
+  margin: 5px; 
+  width: 1000px;
+}
+
 @-webkit-keyframes move-up {
   0% {
     top: 25px;
