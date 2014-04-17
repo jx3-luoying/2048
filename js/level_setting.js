@@ -62,12 +62,12 @@ $(function() {
       "Create an account": function() {
         var bValid = true;
         allFields.removeClass( "ui-state-error" );
-        $( ".input" ).each(function() {
+        $( ".text" ).each(function() {
           bValid = bValid && checkLength( $( this ), "tile name", 1, 5 );
         });
         
         if ( bValid ) {
-          $( ".input" ).each(function(i) {
+          $( ".text" ).each(function(i) {
             text[i+1]=$( this ).val();
           });
           $( this ).dialog( "close" );
