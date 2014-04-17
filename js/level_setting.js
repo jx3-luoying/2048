@@ -74,6 +74,7 @@ $(function() {
           });
           $( "#users" ).append( newList + "</p>" );
           $( this ).dialog( "close" );
+          $("#levelSetting").slideUp("slow");
         }
 
       },
@@ -83,7 +84,6 @@ $(function() {
     },
     close: function() {
       name.val("").removeClass( "ui-state-error" );
-      level.val("");
       $( "div" ).remove("#appendItem").removeClass( "ui-state-error" );
     }
   });
