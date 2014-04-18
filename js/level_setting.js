@@ -1,4 +1,4 @@
-  var text=new Array(18);
+var text=new Array(18);
   text[0] = " ";
   text[1] = "依萍";
   text[2] = "二勾";
@@ -70,7 +70,7 @@ $(function() {
           $( ".text" ).each(function(i) {
             text[i+1]=$( this ).val();
           });
-          window.max = level.val();
+          window.max = 2^level.val();
           $( this ).dialog( "close" );
           $("#levelSetting").slideUp("slow");
         }
