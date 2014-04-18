@@ -111,7 +111,7 @@ $(function() {
         var oClone = $("#template").clone();
         oClone.attr('id',"appendItem");
         oClone.find("input#name").val( text[i+1] );
-        if( i>1 ) oClone.find("input#message").val(txt[i-2]);
+        if( i>1 ) oClone.find("input#message").val(mytxt[i-2]);
         allFields.add(oClone);
         oClone.appendTo( $("#inputList") );
       }
