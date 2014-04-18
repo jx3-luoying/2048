@@ -1,5 +1,4 @@
 var maxscore = 2;
-var max = Math.pow(2,3);
 function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.size         = size; // Size of the grid
   this.inputManager = new InputManager;
