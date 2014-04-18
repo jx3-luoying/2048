@@ -80,13 +80,14 @@ $(function() {
       "确定": function() {
         var bValid = true;
         allFields.removeClass( "ui-state-error" );
-        $( "#name" ).each(function() {
-          bValid = bValid && checkLength( $( this ), "tile name", 2, 4 );
+        $( "#appendItem" ).each(function() {
+          bValid = bValid && checkLength( $(this).find("input#name"), "tile name", 2, 4 );
         });
         
         if ( bValid ) {
-          $( "#name" ).each(function(i) {
-            text[i+1]=$( this ).val();
+          $( "#appendItem" ).each(function(i) {
+            text[i+1]=$(this).find("input#name").val();
+            if(i>2) mytxt[i-2]=$(this).find("input#message").val();
           });
           window.max = Math.pow(2,level.val());
           $( this ).dialog( "close" );
