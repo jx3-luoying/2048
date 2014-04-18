@@ -102,7 +102,6 @@ $(function() {
     },
     close: function() {
       name.val("").removeClass( "ui-state-error" );
-      level.val(3);
       $( "div" ).remove("#appendItem");
       $( ".dialog-field" ).removeClass( "dialog-open" );
     }
