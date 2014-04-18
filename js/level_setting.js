@@ -70,7 +70,7 @@ $(function() {
           $( ".text" ).each(function(i) {
             text[i+1]=$( this ).val();
           });
-          window.max = 2^level.val();
+          window.max = Math.pow(2,level.val());
           $( this ).dialog( "close" );
           $("#levelSetting").slideUp("slow");
         }
