@@ -108,11 +108,11 @@ $(function() {
   $(document).ready(function(){
     $( "#submit" ).button().click(function() {
       for (var i=0;i<level.val();i++){ 
-        var oClone = $("#template").cloneNode(true);
+        var oClone = $("#template").clone();
         oClone.attr('id',"appendItem");
-        oClone.find("name").attr('value',text[i+1]);
+        //oClone.find("name").attr('value',text[i+1]);
         allFields.add(oClone);
-        $("#inputList").append(oClone);
+        oClone.appendTo( $("#inputList") );
       }
       $( ".dialog-field" ).addClass( "dialog-open" );
       $( "#dialog-form" ).dialog( "open" );
