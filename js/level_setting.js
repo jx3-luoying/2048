@@ -17,6 +17,8 @@ var text=new Array(18);
   text[15] = "白白";
   text[16] = "提子";
   text[17] = "山山";
+  
+window.max = Math.pow(2,17);
              
 $(function() {
   var name = $( "#name" ),
