@@ -80,12 +80,12 @@ $(function() {
       "确定": function() {
         var bValid = true;
         allFields.removeClass( "ui-state-error" );
-        $( "#appendItem" ).each(function() {
+        $( "#name" ).each(function() {
           bValid = bValid && checkLength( $( this ), "tile name", 2, 4 );
         });
         
         if ( bValid ) {
-          $( "#appendItem" ).each(function(i) {
+          $( "#name" ).each(function(i) {
             text[i+1]=$( this ).val();
           });
           window.max = Math.pow(2,level.val());
