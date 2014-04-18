@@ -53,9 +53,10 @@ KeyboardInputManager.prototype.listen = function () {
     }
   });
 
-  var retry = document.querySelector(".retry-button");
-  retry.addEventListener("click", this.restart.bind(this));
-  retry.addEventListener("touchend", this.restart.bind(this));
+  // Respond to button presses
+  this.bindButtonPress(".retry-button", this.restart);
+  this.bindButtonPress(".restart-button", this.restart);
+  this.bindButtonPress(".keep-playing-button", this.keepPlaying);
 
   // Listen to swipe events
   var touchStartClientX, touchStartClientY;
