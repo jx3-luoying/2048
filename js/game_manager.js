@@ -147,7 +147,7 @@ GameManager.prototype.move = function (direction) {
 
           // The mighty 131072 tile
           if (merged.value === 8) {
-            this.won = true;
+            self.won = true;
             this.actuate();
           }
         } else {
