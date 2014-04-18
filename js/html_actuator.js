@@ -132,22 +132,6 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 };
 
 HTMLActuator.prototype.message = function (won) {
-  var mytxt=new Array(14);
-  mytxt[0]="我要做只攻罒ω罒！汪~";
-  mytxt[1]="春泥一朵护菊花 万花谷配方山泽的选择╮(╯_╰)╭";
-  mytxt[2]="我抽死你!╰(｀□′)╯（ ┴┴ ";
-  mytxt[3]="我可是在马嵬驿有粉丝的女神！ \(╯-╰)/ ";
-  mytxt[4]="追我的女生再多,人家也只爱基友的捡肥皂！@^_^@";
-  mytxt[5]="我是正♂直♂的大师!>.<";
-  mytxt[6]="啊!双开和尚棍子! ε(┬┬＿┬┬)3";
-  mytxt[7]="我可是披着萝莉皮的御姐!∩__∩y";
-  mytxt[8]="最近亮晶晶太多,土豪的烦恼谁能懂!";
-  mytxt[9]="嗷呜!我再回去睡一会!\(～__～)/";
-  mytxt[10]="作为一只攻我肿么能迷路!//(ㄒoㄒ)// ";
-  mytxt[11]="人家不呆啊喂!不要悬赏人家啊喂!黄鸡别跑啊喂! <( ｀□′)";
-  mytxt[12]="每天都被自己帅醒(*ˉ﹃ˉ) ";
-  mytxt[13]="火车~快去练只秀太来！然后扛着我的五毒向总攻进发！\(≥▽≤)/";
-
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
