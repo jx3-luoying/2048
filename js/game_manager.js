@@ -82,6 +82,7 @@ GameManager.prototype.actuate = function () {
     bestScore:  this.scoreManager.get(),
     terminated: this.isGameTerminated()
   });
+  $( "#levelSetting" ).add("<p>"+this.won+"</p>");
 
 };
 
