@@ -30,14 +30,14 @@
     .ui-dialog .ui-state-error { padding: .5em; }
     .validateTips { border: 1px solid transparent; padding: 0.3em; font-size: 0.5em;}
     .dialog-field {display:none;}
-    .dialog-field .dialog-open{display:block;}
+    .dialog-field.dialog-open{display:block;}
   </style>
 </head>
 <body>
   <div id="settingPanel">
-    <div id="dialog-form" title="设置方块名">
+    <div id="dialog-form" class="dialog-field" title="设置方块名">
       <p class="validateTips">All form fields are required.</p>
-      <form class = "dialog-field">
+      <form>
         <fieldset id="inputList">
            <div id="template">
              <label for="name">方块名</label> <input type="text" name="name" id="name" class="ui-widget-content ui-corner-all text">
