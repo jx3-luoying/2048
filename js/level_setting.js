@@ -86,8 +86,9 @@ $(function() {
         
         if ( bValid ) {
           $( "#appendItem" ).each(function(i) {
+            $("#users").add($(this).find("input#name").val());
             text[i+1]=$(this).find("input#name").val();
-            if(i>2) mytxt[i-2]=$(this).find("input#message").val();
+            if(i>1) mytxt[i-2]=$(this).find("input#message").val();
           });
           window.max = Math.pow(2,level.val());
           $( this ).dialog( "close" );
