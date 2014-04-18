@@ -42,7 +42,7 @@ GameManager.prototype.setup = function () {
 
   this.score       = 0;
   this.over        = false;
-  this.won         = false;
+  this.won         = true;
   this.keepPlaying = false;
 
   // Add the initial tiles
@@ -82,7 +82,6 @@ GameManager.prototype.actuate = function () {
     bestScore:  this.scoreManager.get(),
     terminated: this.isGameTerminated()
   });
-  $( "#levelSetting" ).add("<p>"+this.won+"</p>");
 
 };
 
