@@ -70,6 +70,7 @@ $(function() {
           $( ".text" ).each(function(i) {
             text[i+1]=$( this ).val();
           });
+          window.max = level.val();
           $( this ).dialog( "close" );
           $("#levelSetting").slideUp("slow");
         }
