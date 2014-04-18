@@ -42,7 +42,7 @@ GameManager.prototype.setup = function () {
 
   this.score       = 0;
   this.over        = false;
-  this.won         = true;
+  this.won         = false;
   this.keepPlaying = false;
 
   // Add the initial tiles
@@ -146,7 +146,10 @@ GameManager.prototype.move = function (direction) {
             maxscore = merged.value;
 
           // The mighty 131072 tile
-          if (merged.value > 8) this.won = true;
+          if (merged.value === 8) {
+            this.won = true;
+            this.actuate();
+          }
         } else {
           self.moveTile(tile, positions.farthest);
         }
