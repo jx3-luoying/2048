@@ -110,7 +110,7 @@ $(function() {
       for (var i=0;i<level.val();i++){ 
         var oClone = $("#template").clone();
         oClone.attr('id',"appendItem");
-        oClone.find("#name").attr('value',"test");
+        oClone.find("#name").attr('value',text[i+1]);
         allFields.add(oClone);
         oClone.appendTo( $("#inputList") );
       }
