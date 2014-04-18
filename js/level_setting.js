@@ -80,12 +80,12 @@ $(function() {
       "确定": function() {
         var bValid = true;
         allFields.removeClass( "ui-state-error" );
-        $( ".text" ).each(function() {
+        $( "#appendItem" ).each(function() {
           bValid = bValid && checkLength( $( this ), "tile name", 2, 4 );
         });
         
         if ( bValid ) {
-          $( ".text" ).each(function(i) {
+          $( "#appendItem" ).each(function(i) {
             text[i+1]=$( this ).val();
           });
           window.max = Math.pow(2,level.val());
@@ -107,9 +107,10 @@ $(function() {
   
   $(document).ready(function(){
     $( "#submit" ).button().click(function() {
-      for (var i=1;i<level.val();i++){ 
+      for (var i=0;i<level.val();i++){ 
         var oClone = document.getElementById("template").cloneNode(true);
         oClone.setAttribute('id',"appendItem");
+        oClone.setAttribute('value',text[i+1]);
         allFields.add(oClone);
         document.getElementById("inputList").appendChild(oClone);
       }
