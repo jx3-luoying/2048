@@ -35,6 +35,8 @@ var mytxt=new Array(14);
   mytxt[13]="火车~快去练只秀太来！然后扛着我的五毒向总攻进发！\(≥▽≤)/";
   mytxt[14]="快去好好念书,小鬼们,总攻的位置也是你们能坐的！";
   
+var wonMessage = "我是总攻~总共就是我~嘿！<(￣ ﹌ ￣)> "
+  
 window.max = Math.pow(2,17);
              
 $(function() {
