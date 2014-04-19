@@ -115,6 +115,7 @@ $(function() {
       for (var i=0;i<level.val();i++){ 
         var oClone = $("#template").clone();
         oClone.attr('id',"appendItem");
+        oClone.find("input#name").attr('value', text[i+1] );
         oClone.find("input#name").val( text[i+1] );
         if( i>1 ) 
           oClone.find("input#message").val(mytxt[i-2]);
