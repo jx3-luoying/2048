@@ -50,9 +50,6 @@ $(function() {
    }
 
   function checkLength( o, n, min, max ) {
-    if (o.val() == "依萍"){
-      return false;
-    }
     if ( o.val().length > max || o.val().length < min ) {
       o.addClass( "ui-state-error" );
       updateTips( "Length of " + n + " must be between " + min + " and " + max + "." );
