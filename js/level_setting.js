@@ -50,7 +50,7 @@ $(function() {
    }
 
   function checkLength( o, n, min, max ) {
-    if (o == null){
+    if (o.val() == "依萍"){
       return false;
     }
     if ( o.val().length > max || o.val().length < min ) {
