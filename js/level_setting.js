@@ -94,6 +94,7 @@ $(function() {
             if(i>1) mytxt[i-2]=$(this).find("input#message").val();
           });
           window.max = Math.pow(2,level.val());
+          wonMessage = $("#wonMessage").val();
           $( this ).dialog( "close" );
           $("#levelSetting").slideUp("slow");
         }
@@ -124,6 +125,8 @@ $(function() {
         allFields.add(oClone);
         oClone.appendTo( $("#inputList") );
       }
+      $("#wonMessage").attr('value',wonMessage);
+      $("#wonMessage").val(wonMessage);
       $( ".dialog-field" ).addClass( "dialog-open" );
       $( "#dialog-form" ).dialog( "open" );
     });
