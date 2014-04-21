@@ -14,6 +14,10 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.setup();
 }
 
+function getManager(){
+  return this;
+}
+
 // Restart the game
 GameManager.prototype.restart = function () {
   maxscore = 2;
