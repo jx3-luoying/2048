@@ -95,7 +95,6 @@ $(function() {
           });
           window.max = Math.pow(2,level.val());
           wonMessage = $("#wonMessage").val();
-          getManager().actuate();
           $( this ).dialog( "close" );
           $("#levelSetting").slideUp("slow");
         }
